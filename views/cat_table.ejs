@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>weight</th>
+            <th>eye color</th>
+            <th>owner id</th>
+            <th>toy id</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (const cat of cats) { %>
+            <tr>
+                <td><%= cat.id %></td>
+                <td><%= cat.suly %></td>
+                <td><%= cat.szem_szin %></td>
+                <td><%= cat.gazdi_id %></td>
+                <td><%= cat.jatek_id %></td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>

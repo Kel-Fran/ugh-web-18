@@ -1,0 +1,25 @@
+<% const {toy, message} = locals; %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        cats
+    </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <form method="POST">
+        <input type="text" required name="name">
+        <input type="submit">
+    </form>
+    <% if (toy) { %>
+        <p>id: <%= toy.id%></p>
+        <p>name: <%= toy.nev%></p>
+    <% } %>
+    <% if (message) { %>
+        <p><%= message %>
+    <% } %>
+</body>
+</html>
